@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "gpu": "^1.0.0",
+    "puppeteer": "^19.3.0"
+  }
+}
