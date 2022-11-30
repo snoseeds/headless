@@ -2,6 +2,10 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "gpu": "^1.0.0",
+    "http-server": "^14.1.1",
     "puppeteer": "^19.3.0"
+  },
+  "scripts": {
+    "start:server": "http-server -p 6600"
   }
 }

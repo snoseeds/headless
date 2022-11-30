@@ -10,9 +10,9 @@ function loadImage(src, { hidden = true } = {}) {
 }
 
 // using host address to prevent CORS error such that
-// index.html and the image are served from the same origin - http://127.0.0.1:5500/ 
+// index.html and the image are served from the same origin - http://127.0.0.1:6600/ 
 // TODO: Load domain name from env variable: https://codingsans.com/blog/configure-frontend-projects-with-dotenv
-loadImage('http://127.0.0.1:5500/screenshots/launchbrightly-hero-with-video.jpg')
+loadImage('http://127.0.0.1:6600/screenshots/launchbrightly-hero-with-video.jpg')
   .then(img => {
     const canvas = document.createElement('canvas')
     canvas.width = img.width;

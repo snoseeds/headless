@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').config()
 
 const puppeteer = require('puppeteer');
 (async () => {
@@ -6,7 +7,7 @@ const puppeteer = require('puppeteer');
     // Using Google Chrome Canary To support screenshotting of video elements
     // https://github.com/puppeteer/puppeteer/issues/291#issuecomment-322836639
     // Install Google Chrome Canary and replace with its installation path in your OS
-    executablePath: '/Applications/Google Chrome Canary.app/Contents/MacOS/Google Chrome Canary'
+    executablePath: process.env.GOOGLE_CHROME_CANARY_PATH
   });
 
   try {

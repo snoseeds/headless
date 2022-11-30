@@ -7,7 +7,7 @@ const puppeteer = require('puppeteer');
 
   try {
     const page = await browser.newPage();
-    await page.goto(`${process.env.HEADLESS_HOST}/recolor/index.html`, {
+    await page.goto(`${process.env.HEADLESS_HOST}/recolor`, {
       waitUntil: 'networkidle2',
     });
 
